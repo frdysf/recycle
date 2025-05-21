@@ -2,6 +2,7 @@ from typing import Callable
 from torch.nn import Module
 from torch.nn.modules import activation
 
+
 Activation = Callable[..., Module]
 
 def get_activation_fn(act: str) -> Activation:
